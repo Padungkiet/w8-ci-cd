@@ -1,7 +1,6 @@
 # w8-ci-cd
 Lab w8 ci/cd
 
-<<<<<<< HEAD
 ## Self-study Extension: Add Test Coverage
 
 เพิ่ม automated test อีก 2 กรณี ได้แก่ empty string และชื่อภาษาไทย
@@ -28,11 +27,4 @@ Green pipeline ยืนยันได้ว่า ขั้นตอนแล�
 
 ขั้นตอนที่ใช้เวลามากที่สุดคือการแก้ปัญหา test ที่ fail เพราะข้อความใน implementation และ expected value ใน test ไม่ตรงกัน โดยดูจาก error log ที่แสดง actual และ expected value จากนั้นจึงแก้ไฟล์ให้ตรงกันและรัน npm test ซ้ำจนผ่าน
 
-##Lab Reflection
-
-ก่อนทำแล็บ ผมเข้าใจว่า CI/CD คือกระบวนการที่ช่วยให้การพัฒนาและ deploy โปรแกรมเป็นอัตโนมัติ แต่หลังจากได้ทดลองใช้งาน GitHub Actions และเห็น pipeline เปลี่ยนจาก green เป็น red และกลับมาเป็น green ทำให้เข้าใจชัดเจนขึ้นว่า Continuous Integration เน้นการตรวจสอบการเปลี่ยนแปลงของโค้ดอย่างต่อเนื่องด้วย automated tests ก่อนที่จะนำโค้ดไปรวมกับ main branch
-
-ขั้นตอนที่ใช้เวลามากที่สุดคือการแก้ปัญหา test ที่ fail เพราะข้อความใน implementation และ expected value ใน test ไม่ตรงกัน โดยดูจาก error log ที่แสดง actual และ expected value จากนั้นจึงแก้ไฟล์ให้ตรงกันและรัน npm test ซ้ำจนผ่าน
-
 การทดลองสร้าง red pipeline ช่วยให้เห็นว่า CI ไม่ได้มีไว้เพียงแสดงผลสำเร็จ แต่ยังช่วยตรวจจับข้อผิดพลาดก่อน merge ได้จริง ส่วน automation ที่ต้องการเพิ่มต่อไปคือการ deploy application ไปยัง staging environment อัตโนมัติหลังจาก CI ผ่าน เพื่อให้สามารถทดสอบระบบในสภาพแวดล้อมที่ใกล้เคียงกับ production มากขึ้น
->>>>>>> 382bb6c (Add Lab Reflection)
