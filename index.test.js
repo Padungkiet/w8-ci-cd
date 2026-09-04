@@ -12,6 +12,6 @@ test('returns a greeting for the supplied name', () => {
 test('uses a default name when no name is supplied', () => {
   assert.equal(
     createMessage(),
-    'Hello, Cloud Student! CI/CD is working.'
+    'Hello, Cloud Student! CI/CD is working nakub.'
   );
 });
