@@ -11,3 +11,12 @@ Green pipeline ยืนยันได้ว่า ขั้นตอนแล�
 เพื่อให้เข้าใจว่า CI สามารถตรวจพบความผิดพลาดได้จริง และฝึกอ่าน error log เพื่อหาสาเหตุและแก้ไขจน pipeline กลับมาเป็น green
 5. หาก test ผ่านแต่ application ใช้งานจริงไม่ได้ ควรเพิ่ม test หรือ pipeline stage ใด?
 ควรเพิ่ม Integration Test หรือ End-to-End (E2E) Test เพื่อทดสอบการทำงานร่วมกันของระบบและจำลองการใช้งานจริง รวมถึงอาจเพิ่มขั้นตอน deploy ไปยัง staging ก่อนนำขึ้น production
+
+## Self-study Extension: Add Test Coverage
+
+เพิ่ม automated test อีก 2 กรณี ได้แก่ empty string และชื่อภาษาไทย
+
+- Empty string test ช่วยตรวจสอบพฤติกรรมของระบบเมื่อผู้ใช้ส่งชื่อว่าง
+- Thai name test ช่วยตรวจสอบว่าฟังก์ชันรองรับ Unicode และชื่อภาษาไทยได้ถูกต้อง
+
+หลังเพิ่ม test ระบบมีทั้งหมด 4 tests และทั้งหมดผ่านบน local และ GitHub Actions
